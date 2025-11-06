@@ -86,7 +86,7 @@
         app:layout_constraintStart_toStartOf="@id/gl1"
         android:backgroundTint="@color/buttoncustom"
         android:textColor="@color/black"
-        android:text="SING UP"
+        android:text="SIGN UP"
         style="@style/Widget.MaterialComponents.Button" />
     <Button
         android:id="@+id/btnCancel"
@@ -96,6 +96,7 @@
         app:layout_constraintEnd_toEndOf="@id/gl2"
         app:layout_constraintStart_toStartOf="@id/gl1"
         android:text="CANCEL"
+        android:onClick="cancel"
         style="@style/buttonoutlined" />
 
     <androidx.constraintlayout.widget.Guideline
