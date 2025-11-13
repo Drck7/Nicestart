@@ -1,8 +1,14 @@
 package com.example.nicestart;
 
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
+import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,14 +21,21 @@ public class Splash extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        openApp();
+
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_splash);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+        openApp();
+        ImageView mSea=findViewById(R.id.backView);
+
+        Glide.with(this)
+                .load("https://cdn.pixabay.com/photo/2020/03/23/12/08/plant-4960675_1280.jpg")
+                .transition(DrawableTransitionOptions.withCrossFade(100))
+                .centerCrop()
+                //.diskCacheStrategy(DiskCacheStrategy.ALL)
+                //.placeholder(new ColorDrawable(this.getResources().getColor(R.color.rojo)))
+                //.circleCrop()
+                .into(mSea);
+
     }
     private void openApp(){
         Handler handler=new Handler();
