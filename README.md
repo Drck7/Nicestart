@@ -4,6 +4,6 @@ Ejemplos de la vista para aplicacion android:
 
 ![Login_activity](IMG/login.png)
 
-![singup_activity](IMG/singup.png)
+![singup_activity](IMG/sing_up.png)
 
 ![Profile_activity](IMG/profile.jpg)
