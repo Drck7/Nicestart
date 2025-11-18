@@ -1,7 +1,9 @@
-## INTRODUCION
+Ejemplos de la vista para aplicacion android:
+
+![Splash_activity](IMG/portada.png)
+
 ![Login_activity](IMG/login.png)
-Enlace al login
-![singup_activity](IMG/singUp.png)
-Enlace al SignUp
+
+![singup_activity](IMG/singup.png)
+
 ![Profile_activity](IMG/profile.jpg)
-Enlace al SignUp
