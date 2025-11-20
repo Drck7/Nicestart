@@ -18,7 +18,11 @@ Cuando presionas en el main:
 
 Y si selecionas entre copied o download:
 
+Copied:
+
 ![Main_activity](IMG/copied.png)
+
+Download:
 
 ![Main_activity](IMG/download.png)
 
