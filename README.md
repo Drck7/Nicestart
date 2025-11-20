@@ -15,9 +15,13 @@ Vista del main
 Cuando presionas en el main:
 
 ![Main_activity](IMG/pressmain.png)
+
 Y si selecionas entre copied o download:
 
 ![Main_activity](IMG/copied.png)
+
 ![Main_activity](IMG/download.png)
+
 Y las opciones de settings:
+
 ![Main_activity](IMG/settings_main.png)
