@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             monRefreshListener=new SwipeRefreshLayout.OnRefreshListener() {
         @Override
         public void onRefresh() {
-            Toast toast0=Toast.makeText(MainActivity.this,"Hola", Toast.LENGTH_LONG);
+            Toast toast0=Toast.makeText(MainActivity.this,"Hola, has recargado la pagina", Toast.LENGTH_LONG);
             toast0.show();
             swipeRLayout.setRefreshing(false);
         }

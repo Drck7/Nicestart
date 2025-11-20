@@ -24,10 +24,13 @@ public class Splash extends AppCompatActivity {
 
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_splash);
+        openApp();
         ImageView ghost=findViewById(R.id.LogoView);
+
         Animation myanim= AnimationUtils.loadAnimation(this,R.anim.blink);
         ghost.startAnimation(myanim);
-        openApp();
+
+
         ImageView mSea=findViewById(R.id.backView);
 
         Glide.with(this)
