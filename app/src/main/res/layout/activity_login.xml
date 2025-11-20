@@ -65,6 +65,7 @@
         android:layout_height="60dp"
         android:backgroundTint="@color/buttoncustom"
         android:text="LOGIN"
+        android:onClick="openMain"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@id/gl2"
         app:layout_constraintHorizontal_bias="0.0"
