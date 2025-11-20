@@ -7,6 +7,7 @@
     </style>
     <style name="TransparentActionBar" parent="Widget.AppCompat.ActionBar">
         <item name="background">@android:color/transparent</item>
+        <item name="displayOptions">showHome</item>
     </style>
     <style name="Theme.Nicestart.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
 
