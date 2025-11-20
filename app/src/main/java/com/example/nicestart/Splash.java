@@ -4,6 +4,9 @@ import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
@@ -12,9 +15,6 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class Splash extends AppCompatActivity {
 
@@ -24,6 +24,9 @@ public class Splash extends AppCompatActivity {
 
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_splash);
+        ImageView ghost=findViewById(R.id.LogoView);
+        Animation myanim= AnimationUtils.loadAnimation(this,R.anim.blink);
+        ghost.startAnimation(myanim);
         openApp();
         ImageView mSea=findViewById(R.id.backView);
 
