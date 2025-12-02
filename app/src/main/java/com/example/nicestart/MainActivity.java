@@ -1,5 +1,6 @@
 package com.example.nicestart;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextMenu;
@@ -11,11 +12,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -63,4 +67,50 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_appbar,menu);
         return true;
     }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        int id=item.getItemId();
+        if (id==R.id.item5){
+            showAlertDialogButtonClicked(MainActivity.this);
+
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    public void showAlertDialogButtonClicked(MainActivity mainActivity){
+        //alert builder
+        MaterialAlertDialogBuilder builder=new MaterialAlertDialogBuilder(this);
+        //el dialogo
+        builder.setTitle("Opciones!!");
+        builder.setMessage("A donde quuieres ir");
+        builder.setIcon(R.drawable.puntos_menu);
+        builder.setCancelable(true);
+        //añadir botones
+        builder.setPositiveButton("Scrolling", new DialogInterface.OnClickListener(){
+            @Override
+            public void onClick(DialogInterface dialog, int which){
+                Toast toast = Toast.makeText(MainActivity.this, "Scrolling...", Toast.LENGTH_LONG);
+                toast.show();
+            }
+        });
+
+        builder.setNegativeButton("Do nothing", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+        builder.setNeutralButton("Other", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Intent intent=new Intent(MainActivity.this,Login.class);
+                startActivity(intent);
+                //System.exit(0);
+            }
+        });
+        AlertDialog dialog=builder.create();
+        dialog.show();
+    }
+
 }

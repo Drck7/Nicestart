@@ -26,6 +26,10 @@ Download:
 
 ![Main_activity](IMG/download.png)
 
-Y las opciones de settings:
+Y las opciones de settings :
 
 ![Main_activity](IMG/settings_main.png)
+
+Explorer:
+
+![Main_activity](IMG/explorer_options_screen.png)

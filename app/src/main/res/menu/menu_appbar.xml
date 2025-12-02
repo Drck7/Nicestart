@@ -23,7 +23,7 @@
                 app:showAsAction="ifRoom"/>
             <item
                 android:id="@+id/item5"
-                android:title="Copy"
+                android:title="Explorer"
                 app:showAsAction="ifRoom"/>
         </menu>
 
