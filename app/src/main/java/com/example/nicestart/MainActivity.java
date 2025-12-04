@@ -23,6 +23,7 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 public class MainActivity extends AppCompatActivity {
 
+    private WebView miVisorWeb;
     private SwipeRefreshLayout swipeRLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,11 +31,27 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        TextView mycontext = findViewById(R.id.mytext);
+        //TextView mycontext = findViewById(R.id.mytext);
+        WebView mycontext = findViewById(R.id.vistaweb);
         registerForContextMenu(mycontext);
 
         swipeRLayout=findViewById(R.id.myswype);
         swipeRLayout.setOnRefreshListener(monRefreshListener);
+
+        miVisorWeb = (WebView) findViewById(R.id.vistaweb);
+
+        String html = "<html>" +
+                "<head><style>" +
+                "html, body { margin:0; padding:0; height:100%; overflow:hidden; }" +
+                "img { width:100%; height:100%; object-fit:cover; }" +   // ❤️ el equivalente a centerCrop
+                "</style></head>" +
+                "<body>" +
+                "<img src='https://thispersondoesnotexist.com' />" +
+                "</body></html>";
+
+        miVisorWeb.loadDataWithBaseURL(null, html, "text/html", "UTF-8", null);
+
+
     }
 
     protected  SwipeRefreshLayout.OnRefreshListener
@@ -43,7 +60,9 @@ public class MainActivity extends AppCompatActivity {
         public void onRefresh() {
             Toast toast0=Toast.makeText(MainActivity.this,"Hola, has recargado la pagina", Toast.LENGTH_LONG);
             toast0.show();
+            miVisorWeb.reload();
             swipeRLayout.setRefreshing(false);
+
         }
     };
 
