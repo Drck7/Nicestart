@@ -8,23 +8,13 @@ Ejemplos de la vista para aplicacion android:
 
 ![Profile_activity](IMG/profile.jpg)
 
-Vista del main 
+Vista del main
 
-![Main_activity](IMG/activitymain.png)
+![Main_activity](IMG/vistamain.png)
 
-Cuando presionas en el main:
+Opciones que puedes seleccionar en el main:
 
-![Main_activity](IMG/pressmain.png)
-
-Y si selecionas entre copied o download:
-
-Copied:
-
-![Main_activity](IMG/copied.png)
-
-Download:
-
-![Main_activity](IMG/download.png)
+![Main_activity](IMG/vistaopcionesmain.png)
 
 Y las opciones de settings :
 
@@ -33,5 +23,9 @@ Y las opciones de settings :
 Explorer:
 
 ![Main_activity](IMG/explorer_options_screen.png)
+
+Al recargar la pestaña se vera
+
+![Main_acivity](IMG/vistareload.png)
 
 "CODIGO MALICIOSO DE XINBO QUE LE HE COLADO A DANI >:D"
