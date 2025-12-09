@@ -33,3 +33,5 @@ Y las opciones de settings :
 Explorer:
 
 ![Main_activity](IMG/explorer_options_screen.png)
+
+"CODIGO MALICIOSO DE XINBO QUE LE HE COLADO A DANI >:D"
