@@ -15,6 +15,11 @@
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.Nicestart">
         <activity
+            android:name=".MainBab"
+            android:exported="true">
+
+            </activity>
+        <activity
             android:name=".Profile"
             android:exported="false" />
         <activity
@@ -34,15 +39,13 @@
         <activity
             android:name=".Login"
             android:exported="true"
-            android:theme="@style/Theme.Nicestart.NoActionBar"></activity>
+            android:theme="@style/Theme.Nicestart.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Base.Theme.Nicestart">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FFFFFF</color>
+    <color name="white">#000000</color>
+    <color name="rojo">#7A0610</color>
+    <color name="naranja_amarilloClaro">#7A591A</color>
+    <color name="naranja">#D96A29</color>
+    <color name="marron_osucro">#D54F20</color>
+    <color name="marron">#732F16</color>
+    <color name="fucsia_200">#7E1779</color>
+
+</resources>

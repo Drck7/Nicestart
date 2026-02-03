@@ -90,6 +90,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
         int id=item.getItemId();
+        if (id==R.id.item4){
+            Intent intent= new Intent(this,MainBab.class);
+            startActivity(intent);
+        }
         if (id==R.id.item5){
             showAlertDialogButtonClicked(MainActivity.this);
 

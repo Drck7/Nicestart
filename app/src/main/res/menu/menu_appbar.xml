@@ -15,11 +15,11 @@
         <menu>
             <item
                 android:id="@+id/item3"
-                android:title="Copy"
+                android:title="Settings"
                 app:showAsAction="ifRoom"/>
             <item
                 android:id="@+id/item4"
-                android:title="Settings"
+                android:title="ButtomNavigation"
                 app:showAsAction="ifRoom"/>
             <item
                 android:id="@+id/item5"
