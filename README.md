@@ -26,23 +26,23 @@ Explorer:
 
 Al recargar la pestaña se vera
 
-![Main_acivity](IMG/vistareload.png)
+![Main_activity](IMG/vistareload.png)
 
 La pestaña del Buttom Navigation:
 
-![Main_acivity](IMG/mainbab.png)
+![Main_activity](IMG/mainbab.png)
 
 Su menu de opciones:
 
-![Main_acivity](IMG/mainbab.png)
+![Main_activity](IMG/mainbab_opciones.png)
 
 Boton buscar:
 
-![Main_acivity](IMG/press_search.png)
+![Main_activity](IMG/press_search.png)
 
 Boton favoritos:
 
-![Main_acivity](IMG/press_favorites.png)
+![Main_activity](IMG/press_favorites.png)
 
 Boton Plus:
 
